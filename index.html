@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAILY QUOTE</title>
+ <!-- bbox i con link  -->
+
+ <link rel="stylesheet"
+ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  
+ <!-- css strted -->
+
+ <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100&family=Playfair+Display:ital,wght@0,600;1,500;1,700&family=Poppins:ital,wght@1,200&family=Raleway&family=Roboto:ital,wght@0,300;1,400;1,500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+
+}
+body {
+   background-color:#bbc6fa;
+   /* background: #333; */
+}
+
+.cont{
+    cursor: pointer;
+    background-color: #fff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
+}
+.cont h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.cont h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23,144,229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.cont blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+.cont blockquote::before,.cont blockquote::after{
+    content: '"';
+}
+.cont span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.cont span::before{
+    content: '';
+    width: 20xp;
+    height: 2px;
+    background: rgb(23,124,229);
+    position: absolute;
+    top: 50%;
+    left: -30px;;
+}
+.cont div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.cont button{
+    background-color:rgb(23,124,229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(23,124,229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+.cont button{
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+}
+
+.cont button img{
+    outline: none;
+    border: none;
+    /* width:36px; */
+    margin-right: 10px;
+}
+
+.cont button:nth-child(2){
+    background: transparent;
+    color:#333;
+}
+button i{
+    font-size: 33px;
+    right: 20px;
+}
+button span{
+    bottom: 6px;
+}
+.btn button:hover{
+    background-color:rgb(23,124,229);
+}
+/* meadia quari  */
+
+@media only screen and (max-width:820px){
+    .cont blockquote{
+    font-size: 23px;
+    min-height: 110px;
+}
+    
+    .cont{
+        cursor: pointer;
+        background-color: #fff;
+        width: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 40px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
+    }
+
+
+}
+
+@media only screen and (max-width:500px){
+
+    .cont blockquote{
+    font-size: 21px;
+    min-height: 110px;
+}
+    .cont{
+        position:fixed;
+        cursor: pointer;
+        background-color:#FFF;
+        width:400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 80px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
+    }
+
+    .cont button{
+    background-color:rgb(23,124,229);
+    font-size:15px;
+    color: black;
+    border-radius: 25px;
+    border: 1px solid rgb(23,124,229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+}
+
+
+@media only screen and (max-width:400px){
+    .cont blockquote{
+    font-size: 19px;
+    min-height: 90px;
+}
+    .cont{
+        position:fixed;
+        cursor: pointer;
+        background-color: #fff;
+        width: 350px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 80px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
+    }
+    .cont button{
+    background-color:rgb(23,124,229);
+    color: black;
+    border-radius: 25px;
+    border: 1px solid rgb(23,124,229);
+    font-size:14px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* .btn i{
+   font-size: 20px;
+} */
+
+}
+
+@media only screen and (max-width:340px){
+    .cont blockquote{
+    font-size: 17px;
+    min-height: 90px;
+}
+    .cont{
+        position:fixed;
+        cursor: pointer;
+        background-color: #fff;
+        width: 350px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 80px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
+    }
+
+}
+
+
+
+ </style>
+</head>
+<body >
+<div class="cont">
+
+    <h2>Quote Of The Day</h2>
+     <blockquote id="quote">Loading...</blockquote>
+     <span id="author">Loading...</span>
+     
+     <div class="btn">
+        <button onclick="getQuote(api_url)">New Quote</button>
+         <button onclick="tweet()"><i class='bx bxl-twitter' ></i><span>Twitter</span></button>
+     </div>
+
+</div>
+
+<script>
+
+  const quote = document.getElementById("quote");
+  const author = document.getElementById("author");
+  const whatsappBtn = document.getElementById("whatsappBtn");
+  const api_url = "https://api.quotable.io/random";
+
+  async function getQuote(url) {
+    try {
+      let response = await fetch(url);
+      let data = await response.json();
+
+      quote.innerHTML = data.content;
+      author.innerHTML = `- ${data.author}`;
+
+      // Add event listener to the WhatsApp button
+      whatsappBtn.addEventListener('click', () => {
+        shareOnWhatsApp(`"${data.content}" - ${data.author}`);
+      });
+    } catch (error) {
+      console.log("Error fetching the quote:", error);
+    }
+  }
+
+  function shareOnWhatsApp(text) {
+    const encodedText = encodeURIComponent(text);
+    window.location.href = `whatsapp://send?text=${encodedText}`;
+  }
+
+  getQuote(api_url);
+
+function tweet(){
+  window.open( href="https://twitter.com/intent/tweet?text="+quote.innerHTML, "tweet windo", "width=600,  height=300");
+}
+
+
+</script>
+</body>
+
+</html>
